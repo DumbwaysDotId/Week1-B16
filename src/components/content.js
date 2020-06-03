@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import '../App.css';
+import {
+  Link
+} from 'react-router-dom'
 
 class Content extends Component{ 
     getBatch(){
@@ -17,6 +20,9 @@ class Content extends Component{
           }} />
   
           <button onClick={() => {alert("Hallo Batch 15 yang tampan dan pemberani")}}>Hit Me</button>
+          
+          <Link to="/Increment"><button>Increment</button></Link>
+        
         </div>
       )
     }
